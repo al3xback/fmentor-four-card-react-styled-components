@@ -6,6 +6,7 @@ const SectionShell = styled.section`
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	gap: 5.0666666667em;
 	width: 100%;
 	max-width: 28em;
 	margin: 2.6666666667em 0 4em;
@@ -14,7 +15,6 @@ const SectionShell = styled.section`
 		display: flex;
 		flex-direction: column;
 		padding-top: 2.6666666667em;
-		margin-bottom: 5.0666666667em;
 		text-align: center;
 	}
 
@@ -31,12 +31,12 @@ const SectionShell = styled.section`
 
 	@media (min-width: 48em) {
 		& {
+			gap: 4em;
 			max-width: 74em;
 		}
 
 		& .section__head {
 			max-width: 36em;
-			margin-bottom: 4em;
 		}
 
 		& .section__title,
