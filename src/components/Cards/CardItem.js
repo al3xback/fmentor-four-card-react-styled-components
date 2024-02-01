@@ -2,11 +2,13 @@ import styled, { css } from 'styled-components';
 
 const CardItemShell = styled.div`
 	position: relative;
+	display: flex;
+	flex-direction: column;
 	min-height: 14.6666666667em;
 	padding: 1.6em;
 	background-color: hsl(0, 0%, 100%);
 	border-radius: 8px;
-	box-shadow: 0px 1em 1.3333333333em 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
 
 	&::before {
