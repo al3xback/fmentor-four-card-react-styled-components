@@ -1,28 +1,32 @@
 import styled from 'styled-components';
 
-import CardList from '../Cards/CardList';
+import CardsList from '../Cards/CardsList';
 
 const SectionShell = styled.section`
 	display: flex;
-	align-items: center;
 	flex-direction: column;
-	gap: 5.0666666667em;
+	gap: 2.6666666667em;
 	width: 100%;
 	max-width: 28em;
-	margin: 2.6666666667em 0 4em;
+	margin: 3.3333333333em 0 5.6666666667em;
 
 	& .section__head {
 		display: flex;
 		flex-direction: column;
-		padding-top: 2.6666666667em;
 		text-align: center;
 	}
 
-	& .section__title {
+	& .cards-summary {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	& .cards-summary__title {
 		font-weight: 200;
 	}
 
-	& .section__subtitle {
+	& .cards-summary__subtitle {
 		margin-bottom: 0.6666666667em;
 		font-size: 1.6em;
 		color: hsl(234, 12%, 34%);
@@ -33,18 +37,23 @@ const SectionShell = styled.section`
 		& {
 			gap: 4em;
 			max-width: 74em;
+			margin: 4.6666666667em 0 6.6666666667em;
 		}
 
 		& .section__head {
+			align-items: center;
+		}
+
+		& .cards-summary {
 			max-width: 36em;
 		}
 
-		& .section__title,
-		& .section__subtitle {
+		& .cards-summary__title,
+		& .cards-summary__subtitle {
 			font-size: 2.4em;
 		}
 
-		& .section__subtitle {
+		& .cards-summary__subtitle {
 			margin-bottom: 0.4444444444em;
 		}
 	}
@@ -54,18 +63,22 @@ const Section = () => {
 	return (
 		<SectionShell>
 			<div className="section__head">
-				<h2 className="section__title">Reliable, efficient delivery</h2>
-				<p className="section__subtitle">
-					<strong>Powered by Technology</strong>
-				</p>
-				<p className="section__desc">
-					Our Artificial Intelligence powered tools use millions of
-					project data points to ensure that your project is
-					successful
-				</p>
+				<div className="cards-summary">
+					<h2 className="cards-summary__title">
+						Reliable, efficient delivery
+					</h2>
+					<p className="cards-summary__subtitle">
+						<strong>Powered by Technology</strong>
+					</p>
+					<p className="cards-summary__desc">
+						Our Artificial Intelligence powered tools use millions
+						of project data points to ensure that your project is
+						successful
+					</p>
+				</div>
 			</div>
 			<div className="section__body">
-				<CardList />
+				<CardsList />
 			</div>
 		</SectionShell>
 	);

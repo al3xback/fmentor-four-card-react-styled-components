@@ -4,6 +4,7 @@ const CardItemShell = styled.div`
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	gap: 0.5em;
 	min-height: 14.6666666667em;
 	padding: 1.6em;
 	background-color: hsl(0, 0%, 100%);
@@ -43,10 +44,6 @@ const CardItemShell = styled.div`
 			css`
 				background-color: hsl(212, 86%, 64%);
 			`};
-	}
-
-	& .card__title {
-		margin-bottom: 0.4em;
 	}
 
 	& .card__desc {

@@ -5,9 +5,9 @@ import CardBlock from './CardBlock';
 import supervisorImage from '../../assets/images/icons/supervisor.svg';
 import teamBuilderImage from '../../assets/images/icons/team-builder.svg';
 import karmaImage from '../../assets/images/icons/karma.svg';
-import calculatorImage from '../../assets/images/icons/supervisor.svg';
+import calculatorImage from '../../assets/images/icons/calculator.svg';
 
-const CardListShell = styled.div`
+const CardsListShell = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 1.6em;
@@ -61,14 +61,14 @@ const cards = [
 	},
 ];
 
-const CardList = () => {
+const CardsList = () => {
 	return (
-		<CardListShell>
+		<CardsListShell>
 			{cards.map((card) => (
 				<CardBlock key={card.id} items={card.items} />
 			))}
-		</CardListShell>
+		</CardsListShell>
 	);
 };
 
-export default CardList;
+export default CardsList;
