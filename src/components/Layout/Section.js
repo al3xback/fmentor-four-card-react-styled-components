@@ -7,7 +7,7 @@ const SectionShell = styled.section`
 	flex-direction: column;
 	gap: 2.6666666667em;
 	width: 100%;
-	max-width: 28em;
+	max-width: 22.6666666667em;
 	margin: 3.3333333333em 0 5.3333333333em;
 
 	& .section__head {
@@ -32,7 +32,7 @@ const SectionShell = styled.section`
 		line-height: 1.25;
 	}
 
-	@media (min-width: 48em) {
+	@media (min-width: 57.5em) {
 		& {
 			gap: 4em;
 			max-width: 74em;

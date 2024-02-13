@@ -7,10 +7,11 @@ const CardBlockShell = styled.div`
 	flex-direction: column;
 	gap: 1.6em;
 
-	@media (min-width: 48em) {
+	@media (min-width: 57.5em) {
 		& {
 			justify-content: center;
 			flex: 1;
+			gap: 2em;
 		}
 	}
 `;

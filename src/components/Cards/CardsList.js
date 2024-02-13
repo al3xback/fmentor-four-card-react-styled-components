@@ -12,9 +12,10 @@ const CardsListShell = styled.div`
 	flex-direction: column;
 	gap: 1.6em;
 
-	@media (min-width: 48em) {
+	@media (min-width: 57.5em) {
 		& {
 			flex-direction: row;
+			gap: 2em;
 		}
 	}
 `;

@@ -4,9 +4,9 @@ const CardItemShell = styled.div`
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	gap: 0.5em;
+	gap: 0.6666666667em;
 	min-height: 14.6666666667em;
-	padding: 1.6em;
+	padding: 1.8666666667em;
 	background-color: hsl(0, 0%, 100%);
 	border-radius: 8px;
 	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
