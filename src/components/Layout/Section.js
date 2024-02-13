@@ -8,12 +8,11 @@ const SectionShell = styled.section`
 	gap: 2.6666666667em;
 	width: 100%;
 	max-width: 28em;
-	margin: 3.3333333333em 0 5.6666666667em;
+	margin: 3.3333333333em 0 5.3333333333em;
 
 	& .section__head {
 		display: flex;
 		flex-direction: column;
-		text-align: center;
 	}
 
 	& .cards-summary {
