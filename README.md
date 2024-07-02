@@ -10,10 +10,6 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 
-### Links
-
-- Live Site URL: https://al3xback.github.io/fmentor-four-card-flex/
-
 ## My process
 
 ### Built with
