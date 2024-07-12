@@ -21,15 +21,16 @@ const SectionShell = styled.section`
 		text-align: center;
 	}
 
-	& .cards-summary__title {
+	& .cards-summary__subtitle {
+		margin-bottom: 0.25em;
+		font-size: 1.6em;
 		font-weight: 200;
+		color: hsl(234, 12%, 34%);
+		line-height: 1;
 	}
 
-	& .cards-summary__subtitle {
+	& .cards-summary__title {
 		margin-bottom: 0.6666666667em;
-		font-size: 1.6em;
-		color: hsl(234, 12%, 34%);
-		line-height: 1.25;
 	}
 
 	@media (min-width: 57.5em) {
@@ -53,7 +54,7 @@ const SectionShell = styled.section`
 		}
 
 		& .cards-summary__subtitle {
-			margin-bottom: 0.4444444444em;
+			margin-bottom: 0.2777777778em;
 		}
 	}
 `;
@@ -63,12 +64,12 @@ const Section = () => {
 		<SectionShell>
 			<div className="section__head">
 				<div className="cards-summary">
-					<h2 className="cards-summary__title">
-						Reliable, efficient delivery
-					</h2>
 					<p className="cards-summary__subtitle">
-						<strong>Powered by Technology</strong>
+						Reliable, efficient delivery
 					</p>
+					<h2 className="cards-summary__title">
+						Powered by Technology
+					</h2>
 					<p className="cards-summary__desc">
 						Our Artificial Intelligence powered tools use millions
 						of project data points to ensure that your project is
